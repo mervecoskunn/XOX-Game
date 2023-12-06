@@ -179,11 +179,11 @@ def showRules():
     print(" 6) If you win minimum 2 turn, you will win the game.")
 
 def exitGame():
-    print("\n\n Good Bye ! \n\n")
+    print("\n\n Good Bye! See you soon... \n\n")
     exit()
 
 def initMenu():
-    menu_choise = input("\n 1) Rules: \n 2) Start Game: \n 3) Exit \n Enter your choise:")
+    menu_choise = input(" \n MENU \n 1) Rules \n 2) Start Game \n 3) Exit \n Enter your choise:")
     if(menu_choise == "1"):
         showRules()
         initMenu()
@@ -208,6 +208,6 @@ print("""                     .-'''-.
     .'  .'`.   `.              .'  .'`.   `.    
   .'   /    `.   `.          .'   /    `.   `.  
  '----'       '----'        '----'       '----' """)
-print("\nWelcome to Tic Tac Toe Game !")
+print("\n\t WELCOME to TIC TAC TOE GAME !")
 
 initMenu()
