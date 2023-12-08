@@ -1,2 +1,3 @@
 # Your requirements go here
-# I used native python packages (random,time,os,sys) python surumunu yaz
+# I used native python packages (random,time,os,sys)
+# Python == 3.9.6
