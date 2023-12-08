@@ -1,4 +1,4 @@
-![XOX-GAME](https://tic-tac-toe-game-merve-f793c47a141b.herokuapp.com/)
+[XOX-GAME](https://tic-tac-toe-game-merve-f793c47a141b.herokuapp.com/)
 
 
 ## Reminders
