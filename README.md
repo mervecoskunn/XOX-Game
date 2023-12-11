@@ -72,3 +72,40 @@ If the player wants to re-select a previously selected location, player will enc
   * [Heroku](https://id.heroku.com/login)- This was used to deploy the game in a mock terminal that allows anyone to play the game online.
   * [ASCII ART](https://patorjk.com/software/taag/#p=display&f=JS%20Bracket%20Letters&t=XOX)- We used this as the logo when starting the game.(Font name: Crazy)
   * [Animation](https://medium.com/@joloiuy/creating-captivating-terminal-animations-in-python-a-fun-and-interactive-guide-2eeb2a6b25ec)- We used this to animate the Python terminal loading source code.
+
+## Deployment
+
+### Deployment of the project
+
+I deployed this project with [Heroku](https://id.heroku.com/login), a cloud platform, using the credits provided by [Code Institute](https://codeinstitute.net/se/) to our students.
+
+To deploy this project I used the following steps in Heroku:
+  * Fork or clone a copy of this repository.
+  * Log in or create an account in heroku.
+  * Click on the button in the right corner to create a new app.
+  * Inside the app page, go to setting page (underlined in green) and set the buildpacks to "Python" and "Nodejs" in that order (like in the picture below).
+  * Link the heroku app to the repository.
+  * Go back to the deploy page (underlined in yellow) and you can either choose to manually deploy the site or automatically.
+  * Once it has deployed, it may take a fww minutes to load and you can play the game.
+  * The link to the page to play the game can be found here - [XOX-GAME](https://tic-tac-toe-game-merve-f793c47a141b.herokuapp.com/)
+
+
+  ### Cloning of the Project
+
+  To create a local clone of the project, follow the steps below:
+    1. In the GitHub repository, under the repository name there is a code tab., click on the code tab.
+    2. In the clone tab, click the HTTPS tab. Within this section, click on the clipboard icon and copy the URL supplied for the repository.
+    3. Open an IDE of your choosing and run Git Bash.
+    4. Change the current working directory to the location of which you wish to place the cloned repository.
+    5. In the terminal, write Git Clone and then paste in the URL supplied via GitHub from step 2.
+    6. Press enter and your new cloned repository will be created within the desired location.
+  ## Credits 
+    1. [ASCII ART](https://patorjk.com/software/taag/#p=display&f=JS%20Bracket%20Letters&t=XOX)- We used this as the logo when starting the game.(Font name: Crazy).
+    2. [Animation](https://medium.com/@joloiuy/creating-captivating-terminal-animations-in-python-a-fun-and-interactive-guide-2eeb2a6b25ec)- We used this to animate the Python terminal loading source code.
+
+## Acknowledgements
+
+This project is my 3rd Portfolio Project for the Full Stack Software Developer (e-Commerce) Diploma course provided by the [Code Institute](https://codeinstitute.net/se/).
+I would like to thank my mentor [Precious ljege](https://www.linkedin.com/in/precious-ijege-908a00168/) who helped me while developing my project.
+
+
