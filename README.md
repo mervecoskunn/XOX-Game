@@ -49,4 +49,11 @@ Then, who will play first is written on the screen, and if the player is selecte
 
 ![first-step-1](images/first-step-1.png)
 
+After the choice is made, we can see the sign placed on the game board.
+
+![merve-first](images/merve-first.png)
+
+If the computer is going to play first, a message is given that the computer will play, then the move is passed to the other player.
+![computer-first](images/computer-first.png)
+
 
