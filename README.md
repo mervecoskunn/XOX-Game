@@ -57,6 +57,18 @@ If the computer is going to play first, a message is given that the computer wil
 
 ![computer-first](images/computer-first.png)
 
-If the player wants to re-select a previously selected location, he/she will encounter a warning like the one in the picture below.
+If the player wants to re-select a previously selected location, player will encounter a warning like the one in the picture below.
 
 ![not-empty](images/not-empty.png)
+
+
+## Technologies Used
+
+  * [Github](https://github.com/)- The site was used to edit and host the website.
+  * [GitPod](https://gitpod.io/projects)- Used in the deployment and creating the website.
+  * [Python](https://www.python.org/)- This was used in the production to get the game running as it is required for the app to run.
+  * [Node.js](https://nodejs.org/en/) - This was used in the production to get the game running as it is required for app to run.
+  * [pep8online]()- This site was used to validate the python code to check for any errors within my writing.
+  * [Heroku](https://id.heroku.com/login)- This was used to deploy the game in a mock terminal that allows anyone to play the game online.
+  * [ASCII ART](https://patorjk.com/software/taag/#p=display&f=JS%20Bracket%20Letters&t=XOX)- We used this as the logo when starting the game.(Font name: Crazy)
+  * [Animation](https://medium.com/@joloiuy/creating-captivating-terminal-animations-in-python-a-fun-and-interactive-guide-2eeb2a6b25ec)- We used this to animate the Python terminal loading source code.
