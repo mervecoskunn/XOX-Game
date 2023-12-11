@@ -121,12 +121,13 @@ To deploy this project I used the following steps in Heroku:
   ### Cloning of the Project
 
   To create a local clone of the project, follow the steps below:
-    1. In the GitHub repository, under the repository name there is a code tab., click on the code tab.
-    2. In the clone tab, click the HTTPS tab. Within this section, click on the clipboard icon and copy the URL supplied for the repository.
-    3. Open an IDE of your choosing and run Git Bash.
-    4. Change the current working directory to the location of which you wish to place the cloned repository.
-    5. In the terminal, write Git Clone and then paste in the URL supplied via GitHub from step 2.
-    6. Press enter and your new cloned repository will be created within the desired location.
+  
+  * In the GitHub repository, under the repository name there is a code tab., click on the code tab.
+  * In the clone tab, click the HTTPS tab. Within this section, click on the clipboard icon and copy the URL supplied for the repository.
+  * Open an IDE of your choosing and run Git Bash.
+  * Change the current working directory to the location of which you wish to place the cloned repository.
+  * In the terminal, write Git Clone and then paste in the URL supplied via GitHub from step 2.
+  * Press enter and your new cloned repository will be created within the desired location.
   ## Credits 
     1. [ASCII ART](https://patorjk.com/software/taag/#p=display&f=JS%20Bracket%20Letters&t=XOX)- We used this as the logo when starting the game.(Font name: Crazy).
     2. [Animation](https://medium.com/@joloiuy/creating-captivating-terminal-animations-in-python-a-fun-and-interactive-guide-2eeb2a6b25ec)- We used this to animate the Python terminal loading source code.
