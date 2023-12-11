@@ -61,6 +61,9 @@ If the player wants to re-select a previously selected location, player will enc
 
 ![not-empty](images/not-empty.png)
 
+## Data Model
+You can see the logical flow diagram here.
+
 ## Future Features
 
   * More players may be included.
