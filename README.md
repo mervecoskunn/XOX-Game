@@ -1,4 +1,6 @@
- # [XOX-GAME](https://tic-tac-toe-game-merve-f793c47a141b.herokuapp.com/)
+ # XOX-GAME
+ [XOX-GAME](https://tic-tac-toe-game-merve-f793c47a141b.herokuapp.com/) This project is a game project. It is a popular game also known as tic-tac-toe-game. It is a game that can be played 3 times between the computer and one player and results in winning, drawing or losing.
+ ![Am I Responsive?](images/XOX-GAME-responsive.png)
 
 
 ## Reminders
