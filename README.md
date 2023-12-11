@@ -4,15 +4,47 @@
 
  ![Am I Responsive?](images/XOX-GAME-responsive.png)
 
-# Contents
-<details>
-<summary>Game Rules</summary>
-Tic Tac Toe Rules:
-  1.You will play against computer.
-  2.You will choose a number between 1-9.
-  3.You will try to complete a line.
-  4.If you complete a line, you will win the turn.
-  5.3 game turn will play.")
-  6.If you win minimum 2 turn, you will win the game.
-</details>
+## How to Play
+
+![Start Screen](images/start-screen.png)
+
+When we click on the live link [XOX-GAME](https://tic-tac-toe-game-merve-f793c47a141b.herokuapp.com/) to start the game, we are greeted with this start screen. We see a menu that will help guide us, and we proceed by typing a number between 1 and 3 to select the option we want.
+
+ ### If we choose 1 from the menu
+
+ ![select-1](images/Select-1.png)
+
+If we choose 1. The rules tab will open and we can see the rules of the game as shown in the picture above.
+
+### If we choose 2 from the menu
+
+ ![select-2](images/select-2.png)
+
+If we choose 2, the game will start and ask us to enter a username. If an invalid character is entered, we will see a warning message on this screen.
+
+![message-invalid-username](images/select-2-1.png)
+
+After entering the username, the next step is to start the game and a choice is made between X and O(we use letter O, it is not a number)
+![choose-mark](images/choose-mark.png)
+
+After the sign is selected, the computer and the user randomly choose who will start playing first and the game begins.
+
+Then, who will play first is written on the screen, and if the player is selected to make the first move, after the initial score information is given, player is asked for information on which cell player will tick on the game board and the choice is made.
+
+### for row:
+
+![first-step](images/first-step.png)
+
+### for column:
+
+![first-step-1](images/first-step-1.png)
+
+
+
+### If we choose 3 from the menu
+
+![select-3](images/select-3.png)
+
+If 3 is selected from the menu, you will be exited and this screen will be seen.
+
 
