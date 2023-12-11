@@ -6,7 +6,13 @@
 
 # Contents
 <details>
-<summary>Show Details</summary>
-cjbskjcbjkcjscn
+<summary>Game Rules</summary>
+           Tic Tac Toe Rules:
+    1) You will play against computer.")
+    2) You will choose a number between 1-9.")
+    3) You will try to complete a line.")
+    4) If you complete a line, you will win the turn.")
+    5) 3 game turn will play.")
+    6) If you win minimum 2 turn, you will win the game.")
 </details>
 
