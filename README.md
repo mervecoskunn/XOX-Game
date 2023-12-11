@@ -61,6 +61,14 @@ If the player wants to re-select a previously selected location, player will enc
 
 ![not-empty](images/not-empty.png)
 
+## Testing
+
+The steps I followed while testing my project were as follows:
+  * Tested in the local terminal and the Code institute Heroku Terminal.
+  * Testing the programs code in pep8online and confirmed that there were no errors with the code.
+  * I experimented by making choices that were outside the rules of the game and tested whether the game showed us the necessary warnings and allowed us to continue with the right steps.
+  * Testing the programs code in [pep8online]() and confirmed that there were no errors with the code.
+
 ## Bugs
 
 ### Solved Bugs:
