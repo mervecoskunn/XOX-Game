@@ -24,6 +24,16 @@ If we choose 2, the game will start and ask us to enter a username. If an invali
 
 ![message-invalid-username](images/select-2-1.png)
 
+### If we choose 3 from the menu
+
+![select-3](images/select-3.png)
+
+If 3 is selected from the menu, you will be exited and this screen will be seen.
+
+## Features
+
+### Existing Features
+
 After entering the username, the next step is to start the game and a choice is made between X and O(we use letter O, it is not a number)
 ![choose-mark](images/choose-mark.png)
 
@@ -31,20 +41,12 @@ After the sign is selected, the computer and the user randomly choose who will s
 
 Then, who will play first is written on the screen, and if the player is selected to make the first move, after the initial score information is given, player is asked for information on which cell player will tick on the game board and the choice is made.
 
-### for row:
+#### for row:
 
 ![first-step](images/first-step.png)
 
-### for column:
+#### for column:
 
 ![first-step-1](images/first-step-1.png)
-
-
-
-### If we choose 3 from the menu
-
-![select-3](images/select-3.png)
-
-If 3 is selected from the menu, you will be exited and this screen will be seen.
 
 
