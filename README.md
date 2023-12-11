@@ -61,6 +61,13 @@ If the player wants to re-select a previously selected location, player will enc
 
 ![not-empty](images/not-empty.png)
 
+## Future Features
+
+  * More players may be included.
+  * If we want to extend the game time, we can increase our playing rights, which are currently 3, to the desired number later.
+  * We can add more cells to the game board.
+  * We can make a different arrangement of the game by creating difficulty levels.
+
 ## Testing
 
 The steps I followed while testing my project were as follows:
