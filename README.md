@@ -61,6 +61,16 @@ If the player wants to re-select a previously selected location, player will enc
 
 ![not-empty](images/not-empty.png)
 
+## Bugs
+
+### Solved Bugs:
+
+  * We noticed that in some cases it could not place a mark on the targeted cell and it was fixed.
+  * Some warning messages in the game have been replaced with more meaningful and appropriate versions of the situation.
+
+### Unsolved Bugs:
+
+There are no unfixed bugs found on the project.
 
 ## Technologies Used
 
