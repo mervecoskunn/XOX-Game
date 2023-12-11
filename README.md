@@ -54,6 +54,9 @@ After the choice is made, we can see the sign placed on the game board.
 ![merve-first](images/merve-first.png)
 
 If the computer is going to play first, a message is given that the computer will play, then the move is passed to the other player.
+
 ![computer-first](images/computer-first.png)
 
+If the player wants to re-select a previously selected location, he/she will encounter a warning like the one in the picture below.
 
+![not-empty](images/not-empty.png)
