@@ -122,7 +122,7 @@ def getUserChoise():
         column = input("\n\n Enter your column choise: ").strip()
         # if its not numeric, it will continue loop
         if (not row.isnumeric()) or (not column.isnumeric()):
-            print("\n\n Please enter a number !")
+            print("\n\n Please enter a number between 1-3 !")
             continue
         else:  # if its numeric, it will convert to integer
             row = int(row)
