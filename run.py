@@ -52,6 +52,11 @@ def getPlayerName():
         # strip function will remove spaces from start and end of string
         playerName = playerName.strip()
         # if user enter a name, it will return it
+
+        # player name should be only letters
+        if(not playerName.isalpha()):
+            print("\n\n Please enter only letters !")
+            continue
         if(len(playerName) > 0):
             return playerName
         else: # if user enter empty string, it will continue loop
@@ -115,7 +120,6 @@ def markChoise(choise):
     # we will use global variables
     global choises
     global currentPlayer
-    print(f"\n\n {choise} choise is selected ! \n\n")
     # if choise is empty, mark it with player or computer mark
     if(choises[choise] == "-"):
         if(currentPlayer == "player"):
@@ -124,12 +128,16 @@ def markChoise(choise):
             choises[choise] = computerMark
         return True
     else:
-        print("\n\n This choise is not empty !")
+        print("\n\n This cell is not empty !")
         printTable()
         return False
 # this function will print table 3x3
 def printTable():
-    print(''' \n\t\t | {} | {} | {} | \n\t\t ------------- \n\t\t | {} | {} | {} | \n\t\t -------------  \n\t\t | {} | {} | {} | '''.format(*choises))
+    print('''
+            \n\t\t               columns
+           \n\t\t            --↓---↓---↓----
+          \n\t\t              1   2   3
+          \n\t\t      |→ 1  | {} | {} | {} | \n\t\t   r  |     ------------- \n\t\t   o  |→ 2  | {} | {} | {} | \n\t\t   w  |     -------------  \n\t\t   s  |→ 3  | {} | {} | {} | '''.format(*choises))
 # this function will check if player or computer win or not
 def checkWin():
     # we will use
@@ -182,7 +190,7 @@ def checkTableFull():
 def showScore():
     global gameCount
     global playerWinCount
-    print(f"\n\n| Player : {playerWinCount} | Computer : {gameCount-1 - playerWinCount} | ---  | \n\n")
+    print(f"\n\n| {playerName} : {playerWinCount} | Computer : {gameCount-1 - playerWinCount} | ---  | \n\n")
 # this function is main game play function
 def playGame():
     # first of all, we will select first player
@@ -196,8 +204,6 @@ def playGame():
     global playerMark
     # increase game count 
     gameCount = gameCount + 1
-    # clear terminal screen
-    os.system("clear")
     # print game is starting
     print(f"\n\n Game: {gameCount} is starting \n\n")
     # show loading animation
@@ -227,7 +233,10 @@ def playGame():
             # get the choise from user or computer. if current player is player, it will get from user, else it will get from computer
             # if current player is computer, it will get random number between 1-9
             choise = getUserChoise() if currentPlayer == "player" else random.randint(1, 9)
-            print(f"\n\n {currentPlayer} choised cell {choise} \n\n")
+            if(currentPlayer == "player"):
+                print(f"\n\n {playerName} choised cell {choise} \n\n")
+            else:
+                print(f"\n\n Computer choised cell {choise} \n\n")
             if(markChoise((choise-1))):
                 break
         # print game table after choise
@@ -236,7 +245,7 @@ def playGame():
         winner_mark = checkWin()
         # if there is a winner, print the winner and break the loop
         if(winner_mark != False):
-            gameResult = "win" if winner_mark == playerMark else "lose"
+            gameResult = "WON" if winner_mark == playerMark else "LOSE"
             print(f"\n\n {playerName} {gameResult} ! \n\n")
             if(gameResult == "win" and winner_mark == playerMark):
                 playerWinCount = playerWinCount + 1
@@ -245,15 +254,14 @@ def playGame():
         # this is a check for tie
         if(checkTableFull()):
             gameResult = "tie"
-            print(f"\n\n Game is tie ! \n\n")
+            print(f"\n\n Game is TIE ! \n\n")
             break
         # switch player for next turn
         switchPlayer()  
         # show loading animation
         print("\n\n")  
         showLoading(2)
-        # clear terminal screen
-        os.system("clear")
+       
 # this function will initialize game
 def initGame():
     # we will use global variables
@@ -262,8 +270,7 @@ def initGame():
     print ("\n\n Game is starting..\n\n")
     # show loading animation
     showLoading()
-    # clear terminal screen
-    os.system("clear") 
+   
     # get the player name
     playerName = getPlayerName()
     print(f"\n\n Welcome {playerName} ! \n\n")
@@ -274,19 +281,18 @@ def initGame():
     getPlayerMark()
     print("\n\n")
     showLoading(2) 
-    # clear terminal screen
-    os.system("clear")
+    
     # play game until game count is 3
     while(gameCount < 3):
         playGame()
     # print game is over
     print("\n\n Game is over ! \n\n")
     # show score and print the winner
-    print(f"\n\n| Player : {playerWinCount} | Computer : {gameCount - playerWinCount} | ---  | \n\n")
+    print(f"\n\n| {playerName} : {playerWinCount} | Computer : {gameCount - playerWinCount} | ---  | \n\n")
     if(playerWinCount > gameCount - playerWinCount):
-        print(f"\n\n {playerName} won {playerWinCount} game(s) ! \n\n")
+        print(f"\n\n {playerName} WON {playerWinCount} game(s) !!! \n\n")
     elif(playerWinCount < gameCount - playerWinCount):
-        print(f"\n\n Computer won {gameCount - playerWinCount} game(s) ! \n\n")
+        print(f"\n\n Computer WON {gameCount - playerWinCount} game(s) !!! \n\n")
     else:
         print(f"\n\n Game is tie ! \n\n")
     print("\n\n Thanks for playing ! \n\n")
