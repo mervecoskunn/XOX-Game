@@ -4,6 +4,17 @@
 
  ![Am I Responsive?](images/XOX-GAME-responsive.png)
 
+ # User Experience(UX)
+
+ ## User Stories:
+
+   * As a user, I want to be able to easily understand the purpose of the site when I open it.
+   * As a user, I want to easily access and understand the rules I need to follow.
+   * As a user, I want to easily navigate between steps on the game.
+   * As a user, I want to start the game easily and access the gameboard without any problems.
+   * As a user, I want to easily move on to the next steps with necessary warnings and explanations after the moves you make.
+   * As a user, you have the right to play this game 3 times, see the result at the end of the game and start the next game easily.
+
 ## How to Play
 
 ![Start Screen](images/start-screen.png)
