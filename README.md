@@ -72,6 +72,17 @@ If the player wants to re-select a previously selected location, player will enc
 
 ![not-empty](images/not-empty.png)
 
+If one of the players wins, the warning "{Username} Won / Computer Won" is printed on the screen.
+
+![won message](images/merve-won.png)
+
+If the player loses, the warning "{username} lost " is printed on the screen.
+
+![lose message](images/merve-lose.png)
+
+
+
+
 ## Data Model
 You can see the logical flow diagram here.
 
