@@ -80,6 +80,10 @@ If the player loses, the warning "{username} lost " is printed on the screen.
 
 ![lose message](images/merve-lose.png)
 
+If the game ends in a tie, "Game is tie!" appears on the screen.
+
+![game tie](images/game-tie.jpg)
+
 
 
 
