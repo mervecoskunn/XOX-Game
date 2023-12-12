@@ -88,14 +88,17 @@ The steps I followed while testing my project were as follows:
   * Tested in the local terminal and the Code institute Heroku Terminal.
   * Testing the programs code in pep8online and confirmed that there were no errors with the code.
   * I experimented by making choices that were outside the rules of the game and tested whether the game showed us the necessary warnings and allowed us to continue with the right steps.
-  * Testing the programs code in [pep8online]() and confirmed that there were no errors with the code.
+  * Testing the programs code in [pep8online](https://pypi.org/project/autopep8/) and confirmed that there were no errors with the code.
 
 ## Bugs
 
 ### Solved Bugs:
 
   * We noticed that in some cases it could not place a mark on the targeted cell and it was fixed.
+  * No matter who wins on the score board, the score is added to the computer. It has been solved.
+  * The player name written on the score board was not synchronized with the entered name input. It was fixed.
   * Some warning messages in the game have been replaced with more meaningful and appropriate versions of the situation.
+  * When player went to the next step while playing the game, the screen was cleared and I saw that it was very fast and difficult to understand and follow for people playing for the first time, so I removed the command given to clear the previous steps from the screen.
 
 ### Unsolved Bugs:
 
@@ -107,7 +110,7 @@ There are no unfixed bugs found on the project.
   * [GitPod](https://gitpod.io/projects)- Used in the deployment and creating the website.
   * [Python](https://www.python.org/)- This was used in the production to get the game running as it is required for the app to run.
   * [Node.js](https://nodejs.org/en/) - This was used in the production to get the game running as it is required for app to run.
-  * [pep8online]()- This site was used to validate the python code to check for any errors within my writing.
+  * [pep8online](https://pypi.org/project/autopep8/)- This site was used to validate the python code to check for any errors within my writing.
   * [Heroku](https://id.heroku.com/login)- This was used to deploy the game in a mock terminal that allows anyone to play the game online.
   * [ASCII ART](https://patorjk.com/software/taag/#p=display&f=JS%20Bracket%20Letters&t=XOX)- We used this as the logo when starting the game.(Font name: Crazy)
   * [Animation](https://medium.com/@joloiuy/creating-captivating-terminal-animations-in-python-a-fun-and-interactive-guide-2eeb2a6b25ec)- We used this to animate the Python terminal loading source code.
