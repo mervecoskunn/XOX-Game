@@ -90,6 +90,8 @@ If the game ends in a tie, "Game is tie!" appears on the screen.
 ## Data Model
 You can see the logical flow diagram here.
 
+[flowchart](images/flowchart.drawio-1.png)
+
 ## Future Features
 
   * More players may be included.
