@@ -106,7 +106,8 @@ def showLoading(seconds=1):
                              animation[i %
                                        len(animation)])
             sys.stdout.flush()
-        if time.time() - start_time > seconds:  # The animation will last for 10 seconds
+            # The animation will last for 10 seconds
+        if time.time() - start_time > seconds:
             break
 # this function will get user choise from user as input end return it
 
@@ -116,13 +117,14 @@ def getUserChoise():
     global userChoise
     # this loop will continue until user enter a valid choise
     while True:
-        # get row and column from user and strip it to remove spaces from start and end of string
+        # get row and column from user and strip it
+        # to remove spaces from start and end of string
         # and check if it is numeric or not
         row = input("\n\n Enter your row choise: ").strip()
         column = input("\n\n Enter your column choise: ").strip()
         # if its not numeric, it will continue loop
         if (not row.isnumeric()) or (not column.isnumeric()):
-            print("\n\n Please enter a number between 1-3 !")
+            print("\n\n Please enter a number !")
             continue
         else:  # if its numeric, it will convert to integer
             row = int(row)
@@ -131,7 +133,9 @@ def getUserChoise():
             if ((row < 1 or row > 3 or column < 1 or column > 3)):
                 print("\n\n Please enter a number between 1-3 !")
                 continue
-            else:  # if row and column is between 1-3, it will calculate the cell number and return it
+            else:
+                # if row and column is between 1-3
+                # it will calculate the cell number and return it
                 userChoise = ((int(row) - 1) * 3) + int(column)
                 userChoise = int(userChoise)
                 return userChoise
@@ -162,7 +166,11 @@ def printTable():
             \n\t\t               columns
            \n\t\t            --↓---↓---↓----
           \n\t\t              1   2   3
-          \n\t\t      |→ 1  | {} | {} | {} | \n\t\t   r  |     ------------- \n\t\t   o  |→ 2  | {} | {} | {} | \n\t\t   w  |     -------------  \n\t\t   s  |→ 3  | {} | {} | {} | '''.format(*choises))
+          \n\t\t      |→ 1  | {} | {} | {} |
+          \t   r  |     -------------
+          \t   o  |→ 2  | {} | {} | {} |
+          \t   w  |     -------------
+         \t   s  |→ 3  | {} | {} | {} | \n'''.format(*choises))
 # this function will check if player or computer win or not
 
 
@@ -175,27 +183,41 @@ def checkWin():
             == choises[2] and choises[0] != "-"):
         return choises[0]
     # line 2
-    elif (choises[3] == choises[4] and choises[4] == choises[5] and choises[3] != "-"):
+    elif (choises[3] == choises[4] and
+          choises[4] == choises[5] and
+          choises[3] != "-"):
         return choises[3]
     # line 3
-    elif (choises[6] == choises[7] and choises[7] == choises[8] and choises[6] != "-"):
+    elif (choises[6] == choises[7] and
+          choises[7] == choises[8] and
+          choises[6] != "-"):
         return choises[6]
     # check vertical
     # vertical line 1
-    elif (choises[0] == choises[3] and choises[3] == choises[6] and choises[0] != "-"):
+    elif (choises[0] == choises[3] and
+          choises[3] == choises[6] and
+          choises[0] != "-"):
         return choises[0]
     # vertical line 2
-    elif (choises[1] == choises[4] and choises[4] == choises[7] and choises[1] != "-"):
+    elif (choises[1] == choises[4] and
+          choises[4] == choises[7] and
+          choises[1] != "-"):
         return choises[1]
     # vertical line 3
-    elif (choises[2] == choises[5] and choises[5] == choises[8] and choises[2] != "-"):
+    elif (choises[2] == choises[5] and
+          choises[5] == choises[8] and
+          choises[2] != "-"):
         return choises[2]
     # check diagonal
     # from left top to right bottom
-    elif (choises[0] == choises[4] and choises[4] == choises[8] and choises[0] != "-"):
+    elif (choises[0] == choises[4] and
+          choises[4] == choises[8] and
+          choises[0] != "-"):
         return choises[0]
     # from right top to left bottom
-    elif (choises[2] == choises[4] and choises[4] == choises[6] and choises[2] != "-"):
+    elif (choises[2] == choises[4] and
+          choises[4] == choises[6] and
+          choises[2] != "-"):
         return choises[2]
     else:
         # if no one win, it will return false
@@ -225,7 +247,8 @@ def showScore():
     global gameCount
     global playerWinCount
     print(
-        f"\n\n| {playerName} : {playerWinCount} | Computer : {gameCount-1 - playerWinCount} | ---  | \n\n")
+        f"\n\n| {playerName} : {playerWinCount} " +
+        f"| Computer : {gameCount-1 - playerWinCount} | ---  | \n\n")
 # this function is main game play function
 
 
@@ -267,13 +290,15 @@ def playGame():
             print(f"\n\n Game: {gameCount} Turn: {turnCount}  \n\n")
             # show score
             showScore()
-            # get the choise from user or computer. if current player is player, it will get from user, else it will get from computer
+            # get the choise from user or computer. if current player is player
+            # it will get from user, else it will get from computer
             # if current player is computer, it will get random number between
             # 1-9
-            choise = getUserChoise() if currentPlayer == "player" else random.randint(1, 9)
             if (currentPlayer == "player"):
+                choise = getUserChoise()
                 print(f"\n\n {playerName} choised cell {choise} \n\n")
             else:
+                choise = random.randint(1, 9)
                 print(f"\n\n Computer choised cell {choise} \n\n")
             if (markChoise((choise - 1))):
                 break
@@ -288,7 +313,8 @@ def playGame():
             if (gameResult == "WON" and winner_mark == playerMark):
                 playerWinCount = playerWinCount + 1
             break
-        # check for table full and if table is full, print tie and break the loop
+        # check for table full and if table is full
+        # print tie and break the loop
         # this is a check for tie
         if (checkTableFull()):
             gameResult = "tie"
@@ -329,7 +355,8 @@ def initGame():
     print("\n\n Game is over ! \n\n")
     # show score and print the winner
     print(
-        f"\n\n| {playerName} : {playerWinCount} | Computer : {gameCount - playerWinCount} | ---  | \n\n")
+        f"\n\n| {playerName} : {playerWinCount} " +
+        f"| Computer : {gameCount - playerWinCount} | ---  | \n\n")
     if (playerWinCount > gameCount - playerWinCount):
         print(f"\n\n {playerName} WON {playerWinCount} game(s) !!! \n\n")
     elif (playerWinCount < gameCount - playerWinCount):
@@ -361,7 +388,8 @@ def exitGame():
 def initMenu():
     # this function will initialize the menu
     menu_choise = input(
-        " \n MENU \n 1) Rules \n 2) Start Game \n 3) Exit \n Enter your choise:")
+        " \n MENU \n 1) Rules \n " +
+        "2) Start Game \n 3) Exit \n Enter your choise:")
     if (menu_choise == "1"):
         showRules()
         initMenu()
