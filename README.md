@@ -107,6 +107,8 @@ The steps I followed while testing my project were as follows:
   * I experimented by making choices that were outside the rules of the game and tested whether the game showed us the necessary warnings and allowed us to continue with the right steps.
   * Testing the programs code in [pep8online](https://pypi.org/project/autopep8/) and confirmed that there were no errors with the code.
 
+![python-validation](images/python-validation.jpg)
+
 ## Bugs
 
 ### Solved Bugs:
