@@ -133,6 +133,7 @@ There are no unfixed bugs found on the project.
   * [Heroku](https://id.heroku.com/login)- This was used to deploy the game in a mock terminal that allows anyone to play the game online.
   * [ASCII ART](https://patorjk.com/software/taag/#p=display&f=JS%20Bracket%20Letters&t=XOX)- We used this as the logo when starting the game.(Font name: Crazy)
   * [Animation](https://medium.com/@joloiuy/creating-captivating-terminal-animations-in-python-a-fun-and-interactive-guide-2eeb2a6b25ec)- We used this to animate the Python terminal loading source code.
+  * [Diagram.io](https://app.diagrams.net/) - Used to create flow chart
 
 ## Deployment
 

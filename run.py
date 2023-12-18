@@ -23,16 +23,14 @@ choises = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
 # this function will switch player if current player is player, it will
 # change to computer and vice versa
 
-
 def switchPlayer():
     global currentPlayer
     if (currentPlayer == "player"):
         currentPlayer = "computer"
     else:
         currentPlayer = "player"
+
 # this function will select first player randomly
-
-
 def selectFirstPlayer():
     # we will use global variables
     global playerName
@@ -48,9 +46,8 @@ def selectFirstPlayer():
     else:
         print("\n\n Computer will play first !")
         currentPlayer = "computer"
+
 # this function will get player name from user as input end return it
-
-
 def getPlayerName():
     global playerName
     # this loop will continue until user enter a name
@@ -68,9 +65,8 @@ def getPlayerName():
             return playerName
         else:  # if user enter empty string, it will continue loop
             print("\n\n Please enter your name !")
+
 # this function will get player mark from user as input end return it
-
-
 def getPlayerMark():
     # we will use global variables
     global playerMark
@@ -89,10 +85,9 @@ def getPlayerMark():
             return playerMark
         else:  # if user enter invalid mark, it will continue loop
             print("\n\n Please enter your mark !")
+
 # this function will show loading animation from (I edited a little bit):
 # https://medium.com/@joloiuy/creating-captivating-terminal-animations-in-python-a-fun-and-interactive-guide-2eeb2a6b25ec
-
-
 def showLoading(seconds=1):
     animation = "|/-\\"
     start_time = time.time()
@@ -109,9 +104,8 @@ def showLoading(seconds=1):
             # The animation will last for 10 seconds
         if time.time() - start_time > seconds:
             break
+
 # this function will get user choise from user as input end return it
-
-
 def getUserChoise():
     # we will use global variables
     global userChoise
@@ -139,10 +133,9 @@ def getUserChoise():
                 userChoise = ((int(row) - 1) * 3) + int(column)
                 userChoise = int(userChoise)
                 return userChoise
+            
 # this function will mark choise with player or computer mark and if
 # choise is empty, it will return true, else false
-
-
 def markChoise(choise):
     # we will use global variables
     global choises
@@ -158,9 +151,8 @@ def markChoise(choise):
         print("\n\n This cell is not empty !")
         printTable()
         return False
+    
 # this function will print table 3x3
-
-
 def printTable():
     print('''
             \n\t\t               columns
@@ -171,9 +163,8 @@ def printTable():
           \t   o  |→ 2  | {} | {} | {} |
           \t   w  |     -------------
          \t   s  |→ 3  | {} | {} | {} | \n'''.format(*choises))
+    
 # this function will check if player or computer win or not
-
-
 def checkWin():
     # we will use
     global choises
@@ -222,15 +213,13 @@ def checkWin():
     else:
         # if no one win, it will return false
         return False
+    
 # this function will set table to initial state
-
-
 def resetTable():
     global choises
     choises = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+
 # this function will check if table is full or not
-
-
 def checkTableFull():
     # we will use global variables
     global choises
@@ -240,18 +229,16 @@ def checkTableFull():
             return False
     # if there is no empty cell, it will return true
     return True
+
 # this function will show score
-
-
 def showScore():
     global gameCount
     global playerWinCount
     print(
         f"\n\n| {playerName} : {playerWinCount} " +
         f"| Computer : {gameCount-1 - playerWinCount} | ---  | \n\n")
+    
 # this function is main game play function
-
-
 def playGame():
     # first of all, we will select first player
     selectFirstPlayer()
@@ -327,8 +314,6 @@ def playGame():
         showLoading(2)
 
 # this function will initialize game
-
-
 def initGame():
     # we will use global variables
     global playerName
@@ -372,7 +357,7 @@ def showRules():
     # this function will show rules
     print("\n\n Tic Tac Toe Rules: \n\n")
     print(" 1) You will play against computer.")
-    print(" 2) You will choose a number between 1-9.")
+    print(" 2) You will choose a number between 1-3.")
     print(" 3) You will try to complete a line.")
     print(" 4) If you complete a line, you will win the turn.")
     print(" 5) 3 game turn will play.")
@@ -402,8 +387,6 @@ def initMenu():
         initMenu()
 
 # main function is running at the beginning
-
-
 def main():
     # clear terminal screen
     os.system("clear")
